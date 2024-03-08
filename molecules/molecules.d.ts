@@ -4,35 +4,35 @@ declare type ListItem = {
     onClick?: (value?: string | number | object | undefined) => void;
 };
 
-declare module "reusable_components/items-list" {
-    type ItemsListType = Array<{
-        id: string;
-        label: string;
-        url?: string;
-        icon?: string;
-        //For custom icons like svg or images
-        iconActive?: string;
-        typeicon?: "asset" | "primeicon";
-    }>;
+// declare module "reusable_components/items-list" {
+//     type ItemsListType = Array<{
+//         id: string;
+//         label: string;
+//         url?: string;
+//         icon?: string;
+//         //For custom icons like svg or images
+//         iconActive?: string;
+//         typeicon?: "asset" | "primeicon";
+//     }>;
 
-    type PropsItemsListType = {
-        selectedId?: string;
-        borderHighlightPosition?: "left" | "right";
-        selectedUrl?: string;
-        items: ItemsListType;
-        onclickitem?: (
-            e: React.MouseEvent<HTMLElement>,
-            item: ItemsListType[number]
-        ) => void;
-        reactRouterLink?: boolean;
-        parentStyles?: CSSProperties;
-        bottomBorder?: boolean;
-    };
+//     type PropsItemsListType = {
+//         selectedId?: string;
+//         borderHighlightPosition?: "left" | "right";
+//         selectedUrl?: string;
+//         items: ItemsListType;
+//         onclickitem?: (
+//             e: React.MouseEvent<HTMLElement>,
+//             item: ItemsListType[number]
+//         ) => void;
+//         reactRouterLink?: boolean;
+//         parentStyles?: CSSProperties;
+//         bottomBorder?: boolean;
+//     };
 
-    const Component: React.FC<PropsItemsListType>;
+//     const Component: React.FC<PropsItemsListType>;
 
-    export default Component;
-}
+//     export default Component;
+// }
 
 declare module "reusable_components/card" {
     type PropsCard = React.DetailedHTMLProps<
